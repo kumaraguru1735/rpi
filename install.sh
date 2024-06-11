@@ -11,6 +11,7 @@ fi
 echo "Running as root..."
 
 
+apt install ffmpeg -y
 cp rpi /opt/streamer/
 chmod +x /opt/streamer/rpi
 cp rpi.service /etc/systemd/system/
