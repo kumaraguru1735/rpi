@@ -12,6 +12,7 @@ echo "Running as root..."
 
 
 cp rpi /opt/streamer/
+chmod +x /opt/streamer/rpi
 cp rpi.service /etc/systemd/system/
 systemctl daemon-reload
 systemctl start rpi.service
